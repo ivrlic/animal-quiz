@@ -1,0 +1,23 @@
+.status-bar {
+  text-align: center;
+  background-color: var(--primary-600);
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  right: 0;
+}
+
+.status-bar p {
+  font-size: 1.125rem;
+  letter-spacing: 2px;
+  color: var(--neutral-100-transparent);
+  padding: 0.5rem 0 0.125rem;
+  margin: 0;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: var(--accent-green);
+  box-shadow: inset 0px 4px 8px var(--neutral-900-transparent);
+  border-bottom: 1px solid var(--neutral-900-transparent);
+}

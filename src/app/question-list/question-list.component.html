@@ -1,0 +1,24 @@
+<div
+  class="question-list-cont"
+  [ngStyle]="{ 'background-image': 'url(' + imgUrl + ')' }"
+>
+  <div class="question-container">
+    <p class="question-text">What animal is this?</p>
+    <div
+      class="img-container"
+      [ngStyle]="{ 'background-image': 'url(' + imgUrl + ')' }"
+    >
+      <div class="change-img-cont">
+        <button (click)="handleChangeImg()">
+          <i class="fa-sharp fa"></i>
+        </button>
+      </div>
+    </div>
+
+    <question
+      [answers]="questionsArray[currentQuestionIndex].allAnswers"
+      [correctAnswer]="questionsArray[currentQuestionIndex].correctAnswer"
+      (answerSelected)="onAnswerClick($event)"
+    ></question>
+  </div>
+</div>

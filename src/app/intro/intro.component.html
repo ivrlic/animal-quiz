@@ -1,0 +1,47 @@
+<div class="intro-cont">
+  <p>
+    Hi! You must be a big fan of animals when you landed on this page. Show your
+    knowledge and guess the names of the following animals.
+  </p>
+
+  <form
+    [formGroup]="introForm"
+    (ngSubmit)="$event.preventDefault(); onStartQuiz()"
+  >
+    <div class="intro-input-cont">
+      <label for="intro-input"
+        >Choose the number of questions you'd like to tackle:</label
+      >
+      <input
+        id="intro-input"
+        type="number"
+        formControlName="numInput"
+        (keyup.enter)="onStartQuiz()"
+      />
+      <p
+        class="intro-error-msg"
+        *ngIf="introForm.get('numInput')?.hasError('required')"
+      >
+        Please enter the number of questions.
+      </p>
+      <p
+        class="intro-error-msg"
+        *ngIf="introForm.get('numInput')?.hasError('min')"
+      >
+        Please enter a number greater than or equal to 1.
+      </p>
+      <p
+        class="intro-error-msg"
+        *ngIf="introForm.get('numInput')?.hasError('max')"
+      >
+        Please enter a number less than or equal to 50.
+      </p>
+    </div>
+
+    <div class="intro-confirm-cont">
+      <button type="submit" [disabled]="!introForm.valid">
+        <i class="fa fa-thumbs-up"></i>
+      </button>
+    </div>
+  </form>
+</div>

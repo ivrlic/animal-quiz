@@ -1,0 +1,13 @@
+header {
+  background-color: var(--primary-600);
+  color: var(--neutral-100-transparent);
+  text-align: center;
+  padding: 0.25rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-size: 1.5rem;
+  letter-spacing: 10px;
+}

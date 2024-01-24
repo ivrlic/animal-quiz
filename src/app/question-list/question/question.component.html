@@ -1,0 +1,10 @@
+<div class="answers-container">
+  <button
+    *ngFor="let answer of answers"
+    (click)="onAnswerClick(answer)"
+    class="answer"
+    [ngClass]="getButtonClass(answer)"
+  >
+    {{ answer.toUpperCase() }}
+  </button>
+</div>

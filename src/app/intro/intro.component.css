@@ -1,0 +1,83 @@
+.intro-cont {
+  position: fixed;
+  display: block;
+  font-style: italic;
+  left: 0;
+  right: 0;
+  margin: 2rem auto;
+  padding: 2em 3em;
+  max-width: 500px;
+  height: 400px;
+  background-color: var(--neutral-300-transparent);
+  border: var(--primary-600) 2px solid;
+  border-radius: 15px;
+  color: var(--primary-600);
+  box-shadow: 0px 0px 60px 40px var(--neutral-900);
+  text-align: center;
+}
+
+.intro-cont p {
+  font-size: 1.25rem;
+}
+
+/* input */
+.intro-input-cont {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.intro-cont .intro-error-msg {
+  font-size: 1rem;
+  color: var(--accent-red);
+}
+
+/* styling input with the type = "number" */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+  margin: 0;
+  width: 50px;
+  text-align: center;
+  font-size: 1.125rem;
+  padding: 0.125rem 0.5rem;
+  border: 1px solid var(--primary-600);
+  border-radius: 3px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* button */
+.intro-confirm-cont {
+  position: absolute;
+  bottom: 2rem;
+  right: 3.5rem;
+}
+
+.intro-cont button {
+  border: none;
+  background-color: transparent;
+}
+
+.fa-thumbs-up {
+  font-size: 2rem;
+  color: var(--primary-600);
+}
+
+button:not([disabled]) .fa-thumbs-up:hover,
+button:not([disabled]) .fa-thumbs-up:focus {
+  font-size: 1.75rem;
+  cursor: pointer;
+  color: var(--primary-300);
+}
+
+button:not([disabled]) .fa-thumbs-up:active {
+  transform: rotate(340deg);
+}

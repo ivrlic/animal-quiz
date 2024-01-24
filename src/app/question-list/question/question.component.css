@@ -1,0 +1,46 @@
+.answers-container {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.answer {
+  font-family: "Andika", sans-serif;
+  font-size: 1.25rem;
+  border: none;
+  background-color: var(--neutral-100-transparent);
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  color: var(--neutral-900);
+  cursor: pointer;
+}
+
+.answer:hover,
+.answer:focus {
+  background-color: var(--neutral-100);
+}
+
+.answer:active {
+  background-color: var(--neutral-300);
+  color: var(--neutral-100);
+}
+
+.wrong-guess {
+  font-size: 1rem;
+  color: var(--neutral-100);
+  background-color: var(--accent-red-transparent);
+}
+
+.wrong-guess:hover,
+.wrong-guess:focus {
+  font-size: 1rem;
+  color: var(--neutral-100);
+  background-color: var(--accent-red-transparent);
+}
+
+.answers-container .correct-guess {
+  background-color: var(--accent-green);
+  font-size: 1rem;
+  font-weight: bold;
+}
