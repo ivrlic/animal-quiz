@@ -65,9 +65,9 @@ These instructions will help you set up and run the project on your local machin
 
 Start the Angular development server:
 
-```bash
-ng serve
-```
+    ```bash
+    ng serve
+    ```
 
 Visit http://localhost:4200/ in your web browser to play the Animal Kingdom Quiz.
 
